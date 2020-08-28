@@ -1,0 +1,52 @@
+.tow-slider {
+  padding: 0;
+}
+.tow-slider .slider {
+  overflow: hidden;
+  height: 680px;
+  position: relative;
+}
+.tow-slider .slider > div {
+  position: absolute;
+  width: 40000px;
+  height: 680px;
+}
+.tow-slider .slider > div > img {
+  float: left;
+  height: 680px;
+}
+.tow-slider .slider > span {
+  position: absolute;
+  top: 45%;
+  font-size: 3em;
+  cursor: pointer;
+  user-select: none;
+}
+.tow-slider .slider > span:last-of-type {
+  right: 0;
+}
+.tow-slider .slider > ul {
+  width: 500px;
+  padding: 0 10px;
+  height: 25px;
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  margin-left: -250px;
+  bottom: 20px;
+  text-align: center;
+}
+.tow-slider .slider > ul li {
+  list-style: none;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  margin: 5px 8px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.tow-slider .slider > ul .active {
+  background-color: #000;
+}

@@ -1,0 +1,64 @@
+// 轮播图
+.tow-slider {
+  padding: 0;
+
+  .slider {
+    overflow : hidden;
+    // width    : 100vw;
+    height   : 680px;
+    // margin:150px auto;
+    position : relative;
+
+    &>div {
+      position: absolute;
+      width   : 40000px;
+      height  : 680px;
+
+      &>img {
+        // float 会将所有元素变块级元素
+        float : left;
+        // width : 100vw;
+        height: 680px;
+      }
+    }
+
+    &>span {
+      position   : absolute;
+      top        : 45%;
+      font-size  : 3em;
+      cursor     : pointer;
+      user-select: none;
+    }
+
+    &>span:last-of-type {
+      right: 0;
+    }
+
+    &>ul {
+      width      : 500px;
+      padding    : 0 10px;
+      height     : 25px;
+      position   : absolute;
+      z-index    : 20;
+      left       : 50%;
+      margin-left: -250px;
+      bottom     : 20px;
+      text-align : center;
+
+      li {
+        list-style      : none;
+        display         : inline-block;
+        width           : 8px;
+        height          : 8px;
+        background-color: #fff;
+        margin          : 5px 8px;
+        border-radius   : 50%;
+        border: 1px solid #fff;
+        cursor          : pointer;
+      }
+      .active {
+        background-color: #000;
+      }
+    }
+  }
+}

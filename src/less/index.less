@@ -1,0 +1,128 @@
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+// 引入轮播图
+@import "./slider.less";
+
+.top-warp {
+  width              : 1240px;
+
+  >.top-nav {
+    height             : 82px;
+    width              : 1240px;
+    position           : absolute;
+    z-index            : 3;
+    top                : 0;
+
+    >a {
+      display: block;
+      width  : 110px;
+      height : 100%;
+      float  : left;
+
+      >.top-logo {
+        height    : 100%;
+        width     : 110px;
+        background: url('../images/login/base.png') 0px 25px;
+      }
+    }
+
+    >ul {
+      width        : 760px;
+      height       : 100%;
+      float        : left;
+      margin-left  : 80px;
+      margin-bottom: 0;
+
+      >li {
+        float     : left;
+        list-style: none;
+
+        >a {
+          display    : block;
+          padding    : 31px 20px 30px;
+          line-height: 21px;
+          font-size  : 14px;
+          transition : color .1s linear;
+          color      : #fff;
+
+          &:hover {
+            color: rgb(48, 88, 223);
+          }
+        }
+      }
+    }
+
+    .top-search {
+      float           : left;
+      width           : 180px;
+      height          : 30px;
+      border          : 1px solid rgb(102, 102, 102);
+      background-color: #fff;
+      border-radius   : 15px;
+      margin-top      : 27px;
+
+      >input {
+        margin-top : 5px;
+        margin-left: 13px;
+        border     : none;
+        outline    : none;
+        width      : 130px;
+      }
+    }
+
+    .top-shop {
+      float      : right;
+      margin-top : 27px;
+      margin-left: 10px;
+
+      >a {
+        display        : block;
+        width          : 30px;
+        height         : 30px;
+        background     : url('../images/index/shop.png');
+        background-size: 30px;
+      }
+    }
+
+    .top-user {
+      float     : right;
+      margin-top: 27px;
+
+      >a {
+        display        : block;
+        width          : 30px;
+        height         : 30px;
+        background     : url('../images/index/man.png');
+        background-size: 30px;
+      }
+
+      // 登录后的样式
+      >.userLogo {
+        display        : none;
+        width          : 30px;
+        height         : 30px;
+        background     : url('../images/index/user.jpg') no-repeat center center;
+        background-size: 50px;
+        border-radius  : 50%;
+      }
+    }
+  }
+}
+// 四个图标区域
+.three-warp {
+  width              : 1240px;
+  background-color: #fddf;
+  >.three-row {
+
+    height: 278px;
+  }
+}
+
+

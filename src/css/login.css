@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none !important;
+}
+.top-warp {
+  width: 1200px;
+}
+.top-warp > .top-nav {
+  height: 68px;
+}
+.top-warp > .top-nav > a {
+  display: block;
+  width: 110px;
+  height: 100%;
+}
+.top-warp > .top-nav > a > .top-logo {
+  height: 100%;
+  width: 110px;
+  background: url('../images/login/base.png') 0px 25px;
+}
+.main-warp {
+  height: 750px;
+  background-color: #eefdfd;
+}
+.main-warp > .main-bj {
+  width: 100%;
+  height: 100%;
+  background: url('../images/login/pic-flyme.png') no-repeat;
+  background-position: 50% 50%;
+}
+.main-warp > .main-bj > .main-center {
+  height: 100%;
+  width: 1240px;
+}
+.main-warp > .main-bj > .main-center > .row .main-form {
+  width: 368px;
+  background-color: #fff;
+  margin-top: 130px;
+  margin-left: 61%;
+  border-radius: 2px;
+  box-shadow: 0 6px 12px 0 rgba(138, 153, 150, 0.15);
+  padding: 35px 35px 10px;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .top-title {
+  width: 300px;
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: center;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .top-title > a {
+  text-decoration: none;
+  color: #7f7f7f;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .top-title .black {
+  color: #000;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .top-title > a:hover {
+  color: #000;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .top-title > span {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 15px;
+  line-height: 25px;
+  border: 2px solid #7f7f7f;
+  border-left: 1px;
+  height: 14px;
+  width: 2px;
+  display: inline-block;
+  color: #7f7f7f;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .top-title h4 {
+  color: #3058df;
+}
+.main-warp > .main-bj > .main-center > .row .main-form .main-warn {
+  opacity: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #ffd1ca;
+  border: 1px solid #ffc3b4;
+  margin-bottom: 8px;
+  border-radius: 3px;
+}
+.main-warp > .main-bj > .main-center > .row .main-form .main-warn > span:first-child {
+  display: block;
+  float: left;
+  width: 250px;
+  line-height: 30px;
+  text-indent: 30px;
+  color: #666666;
+  background: url('../images/login/error-ico.png') no-repeat 7px 6px;
+}
+.main-warp > .main-bj > .main-center > .row .main-form .main-warn > span:last-child {
+  float: left;
+  display: block;
+  width: 35px;
+  height: 100%;
+  background: url('../images/login/close-ico.png') no-repeat 18px 8px;
+  cursor: pointer;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 {
+  display: block;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 > .one-user {
+  border: 1px solid #dadada;
+  height: 46px;
+  border-radius: 2px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 > .one-user > span:first-child {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  color: #7f7f7f;
+  margin-right: -4px;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 > .one-user > span:last-of-type {
+  display: inline-block;
+  height: 23px;
+  width: 0.7px;
+  position: absolute;
+  top: 11px;
+  left: 68px;
+  background-color: #dadada;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 > .one-user #username,
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 > .one-user #password {
+  display: b;
+  border: none;
+  height: 100%;
+  outline: none;
+  width: 74%;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 > .main-verify {
+  border: 1px solid #dadada;
+  height: 45px;
+  border-radius: 2px;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 > .main-verify > span:first-of-type {
+  width: 30px;
+  height: 30px;
+  margin-top: 3px;
+  margin-left: 4px;
+  display: inline-block;
+  background: url('../images/login/sprite.1.5.8.png') no-repeat 1px -148px;
+  vertical-align: initial;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 > .main-verify > div {
+  display: inline-block;
+  line-height: 20px;
+  position: relative;
+  top: -7px;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 > .main-verify > span:last-of-type {
+  width: 30px;
+  height: 25px;
+  margin-top: 3px;
+  margin-left: 14px;
+  display: inline-block;
+  background: url('../images/login/sprite.1.5.8.png') no-repeat 1px -101px;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 .main-check {
+  margin-bottom: 20px;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 .main-check #checkbox {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-top: 0;
+  border-color: #7f7f7f;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 .main-check #checkbox2 {
+  width: 13px;
+  height: 13px;
+  vertical-align: middle;
+  margin-top: 0;
+  border-color: #7f7f7f;
+  border-radius: 100px;
+  border: 1px solid;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 .main-check > span {
+  color: #7f7f7f;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 .main-check > .pact {
+  font-size: 12px;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 .main-check > a {
+  font-size: 12px;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 #submit {
+  width: 100%;
+  height: 46px;
+  background-color: #387aff;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  margin-bottom: 13px;
+  color: #fff;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 #submit:hover {
+  background-color: #3058df;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 .main-bottom > a:first-child {
+  float: left;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .login1 .main-bottom > a:last-child {
+  float: right;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .qr {
+  display: none;
+}
+.main-warp > .main-bj > .main-center > .row .main-form > .qr > p {
+  color: rgba(127, 127, 127, 0.562);
+  font-size: 16px;
+}
+.floor-main {
+  height: 131px;
+}
+.floor-main .floor-one {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.floor-main .floor-one > ul {
+  width: 445px;
+  height: 50px;
+  float: left;
+}
+.floor-main .floor-one > ul > li {
+  list-style: none;
+  float: left;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.floor-main .floor-one > ul > .foot-line {
+  float: left;
+  background-color: #888;
+  margin: 0px 8px;
+  margin-top: 5px;
+  width: 1px;
+  height: 10px;
+  margin-top: 25px;
+}
+.floor-main .floor-one > .floor-contact {
+  width: 252px;
+  float: left;
+  height: 50px;
+}
+.floor-main .floor-one > .floor-contact > span {
+  margin-top: 18px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.floor-main .floor-one > .floor-contact > a {
+  margin-top: 14px;
+  display: inline-block;
+  border: 1px solid transparent;
+  background-color: #32a5e7;
+  color: #Fff;
+  height: 22px;
+  line-height: 22px;
+  width: 64px;
+  border-radius: 3px;
+  text-align: center;
+  margin-left: 10px;
+}
+.floor-main .floor-one .floor-icon {
+  float: right;
+  height: 50px;
+}
+.floor-main .floor-one .floor-icon > a {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  margin-top: 15px;
+  transition: 0.7s;
+}
+.floor-main .floor-one .floor-icon > a:first-child {
+  background: url('../images/login/base.png') no-repeat -217px -89px;
+  margin-right: 8px;
+}
+.floor-main .floor-one .floor-icon > a:first-child:hover {
+  background-position-y: -136px;
+}
+.floor-main .floor-one .floor-icon > a:nth-child(2) {
+  background: url('../images/login/base.png') no-repeat -301px -89px;
+  margin-right: 8px;
+}
+.floor-main .floor-one .floor-icon > a:nth-child(2):hover {
+  background-position-y: -136px;
+}
+.floor-main .floor-one .floor-icon > a:nth-child(3) {
+  background: url('../images/login/base.png') no-repeat -343px -89px;
+}
+.floor-main .floor-one .floor-icon > a:nth-child(3):hover {
+  background-position-y: -136px;
+}
+.floor-main .floor-one .floor-tow {
+  height: 50px;
+  float: left;
+  width: 100%;
+  margin-left: 1px;
+}
+.floor-main .floor-one .floor-tow > span {
+  font-size: 13px;
+  color: rgba(127, 127, 127, 0.562);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.floor-main .floor-one .floor-tow > span:last-child {
+  display: inline-block;
+  text-indent: 20px;
+  background: url('../images/login/ghs.png') no-repeat 1px 1px;
+  background-size: 14px 14px;
+}
+.floor-main .floor-one .floor-tow > span:hover {
+  color: #000;
+}
