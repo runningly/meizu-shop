@@ -1,14 +1,16 @@
 .tow-slider {
+  width: 100%;
   padding: 0;
 }
 .tow-slider .slider {
   overflow: hidden;
+  text-align: center;
   height: 680px;
   position: relative;
 }
 .tow-slider .slider > div {
   position: absolute;
-  width: 40000px;
+  width: 60000px;
   height: 680px;
 }
 .tow-slider .slider > div > img {

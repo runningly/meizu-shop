@@ -7,22 +7,22 @@ a {
   text-decoration: none !important;
 }
 .tow-slider {
+  width: 100%;
   padding: 0;
 }
 .tow-slider .slider {
   overflow: hidden;
-  width: 100vw;
+  text-align: center;
   height: 680px;
   position: relative;
 }
 .tow-slider .slider > div {
   position: absolute;
-  width: 40000px;
+  width: 60000px;
   height: 680px;
 }
 .tow-slider .slider > div > img {
   float: left;
-  width: 100vw;
   height: 680px;
 }
 .tow-slider .slider > span {
@@ -152,8 +152,394 @@ a {
 }
 .three-warp {
   width: 1240px;
-  background-color: #fddf;
 }
-.three-warp > .three-row {
-  height: 278px;
+.three-warp > .three-row > div {
+  padding-top: 45px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-bottom: 39px;
+}
+.three-warp > .three-row > div > p {
+  color: #999999;
+  font-size: 14px;
+}
+.three-warp > .three-row > div > h3 {
+  font-size: 20px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.three-warp > .three-row > div:hover {
+  opacity: 0.85;
+}
+.three-warp > .three-row img {
+  width: 130px;
+  height: 130px;
+}
+.main-index {
+  background-color: #f4f4f4;
+}
+.main-index > .title-top {
+  text-align: center;
+}
+.main-index > .title-top > h3 {
+  margin-top: 50px;
+  font-size: 30px;
+}
+.main-index .last-shop {
+  margin-bottom: 60px;
+}
+.main-index > .phone-img {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+}
+.main-index > .phone-img > img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s linear;
+}
+.main-index > .phone-img > img:hover {
+  opacity: 0.85;
+}
+.main-index .red-box {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  color: #fff !important;
+  font-size: 16px !important;
+  background-image: linear-gradient(120deg, #ff3149, #ff64a6);
+  text-align: center;
+  line-height: 60px;
+  top: 30px;
+  left: 30px;
+}
+.main-index .six-phone {
+  width: 1240px;
+  padding: 0;
+}
+.main-index .six-phone a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+.main-index .six-phone a:hover {
+  color: #000;
+}
+.main-index .six-phone > div {
+  height: 610px;
+  width: 615px;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+.main-index .six-phone .tow-phone {
+  position: relative;
+  padding: 0;
+}
+.main-index .six-phone .tow-phone img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 460px;
+  margin-left: -250px;
+}
+.main-index .six-phone .tow-phone:first-child {
+  margin-right: 9px;
+  margin-top: 10px;
+}
+.main-index .six-phone .tow-phone:nth-child(2) {
+  margin-top: 10px;
+}
+.main-index .six-phone .tow-phone .tow-word {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.main-index .six-phone .tow-phone .tow-word > h3 {
+  font-size: 28px;
+}
+.main-index .six-phone .tow-phone .tow-word > p {
+  font-size: 18px;
+  color: #333;
+}
+.main-index .six-phone .tow-phone .tow-word > span {
+  display: inline-block;
+  color: #c00;
+  font-size: 22px;
+  margin-right: 14px;
+}
+.main-index .six-phone .four-phone,
+.main-index .shop-headset .four-phone {
+  width: 303px;
+  height: 375px;
+  text-align: center;
+  margin-right: 9px;
+  margin-top: 10px;
+  padding: 0;
+}
+.main-index .six-phone .four-phone:last-of-type,
+.main-index .shop-headset .four-phone:last-of-type {
+  margin-right: 0;
+}
+.main-index .six-phone .four-phone img,
+.main-index .shop-headset .four-phone img {
+  height: 230px;
+  margin-top: 30px;
+}
+.main-index .six-phone .four-phone h4,
+.main-index .shop-headset .four-phone h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 7px;
+}
+.main-index .six-phone .four-phone p,
+.main-index .shop-headset .four-phone p {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 5px;
+}
+.main-index .six-phone .four-phone span,
+.main-index .shop-headset .four-phone span {
+  display: inline-block;
+  color: #c00;
+  font-size: 22px;
+  margin-right: 14px;
+}
+.main-index .six-phone > div,
+.main-index .shop-headset > .row > div {
+  transition: all 0.4s ease;
+}
+.main-index .six-phone > div:hover,
+.main-index .shop-headset > .row > div:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.main-index .shop-headset {
+  width: 1240px;
+}
+.main-index .shop-headset .four-phone {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+.main-index .shop-headset .four-phone .big-headset {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+}
+.main-index .shop-headset .four-phone .big-word {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+.main-index .shop-headset .four-phone .big-word > h4 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  display: block;
+  word-wrap: normal;
+}
+.main-index .shop-headset .four-phone .big-word > p {
+  color: #fff;
+  font-size: 14px;
+}
+.main-index .shop-headset .four-phone .big-word > span {
+  color: #ebce6b;
+  font-size: 24px;
+  font-weight: 700;
+}
+.floor-warp {
+  padding: 0;
+  width: 1240px;
+  height: 248px;
+  padding: 48px 0 20px;
+}
+.floor-warp > .row {
+  margin: 0px;
+}
+.floor-warp > .one {
+  height: 85px;
+}
+.floor-warp > .one .col-md-8 {
+  padding: 0;
+}
+.floor-warp > .one ul {
+  width: 1000px;
+  height: 69px;
+}
+.floor-warp > .one ul li {
+  text-align: center;
+  list-style: none;
+  width: 150px;
+  float: left;
+  height: 69px;
+  cursor: pointer;
+}
+.floor-warp > .one ul li > img {
+  width: 50px;
+  height: 39px;
+}
+.floor-warp > .one ul li > p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #999;
+}
+.floor-warp > .one > .right-word {
+  width: 170px;
+  height: 103px;
+  float: right;
+  padding: 0;
+  text-align: right;
+  margin-top: -20px;
+}
+.floor-warp > .one > .right-word > p {
+  color: #999;
+  font-size: 12px;
+}
+.floor-warp > .one > .right-word > h4 {
+  color: #008cff;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: -6px;
+  line-height: 40px;
+  margin-bottom: 0px;
+}
+.floor-warp > .one > .right-word > span {
+  display: block;
+  height: 30px;
+  padding: 0 16px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 3px;
+  display: inline-block;
+  font-size: 14px;
+  background: #008cff;
+  cursor: pointer;
+}
+.floor-warp .two {
+  height: 18px;
+  height: 1px;
+  background-color: #eeeeee;
+}
+.floor-warp .two .col-md-8 {
+  padding: 0;
+}
+.floor-warp .two ul {
+  width: 1100px;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 25px;
+}
+.floor-warp .two ul li {
+  list-style: none;
+  padding-right: 15px;
+  border-right: 1px solid #d6d6d6;
+  float: left;
+  height: 18px;
+  margin-right: 15px;
+}
+.floor-warp .two ul li:last-of-type {
+  margin-right: 0px;
+  border: none;
+}
+.floor-warp .two ul li:last-of-type:last-of-type > a {
+  background: url('../images/index/1c31db15-ab85-4932-8e6c-edfd6039bc60.png') no-repeat 1px;
+  background-size: 14px 14px;
+  text-indent: 20px;
+}
+.floor-warp .two ul li a {
+  display: inline-block;
+  color: #999;
+}
+.floor-warp .two ul li a:hover {
+  color: #008cff;
+}
+.floor-warp .floor-tow {
+  height: 50px;
+  float: left;
+  width: 100%;
+  margin-left: 1px;
+}
+.floor-warp .floor-tow > span {
+  font-size: 13px;
+  color: rgba(127, 127, 127, 0.562);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.floor-warp .floor-tow > span:last-child {
+  display: inline-block;
+  text-indent: 20px;
+  background: url('../images/login/ghs.png') no-repeat 1px 1px;
+  background-size: 14px 14px;
+}
+.floor-warp .floor-tow > span:hover {
+  color: #000;
+}
+.floor-warp .floor-tow > ul {
+  width: 220px;
+  height: 30px;
+  float: right;
+  position: relative;
+}
+.floor-warp .floor-tow > ul .qbox {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: -185px;
+  left: 53px;
+  transition: 0.3s;
+  opacity: 0;
+}
+.floor-warp .floor-tow > ul .qbox img {
+  width: 100%;
+  height: 100%;
+}
+.floor-warp .floor-tow > ul > li {
+  width: 24px;
+  height: 20px;
+  list-style: none;
+  padding: 0 5px 0;
+  border-right: 1px solid #d6d6d6;
+  float: right;
+  margin-left: 5px;
+}
+.floor-warp .floor-tow > ul > li:first-child {
+  background: url('../images/login/base.png') no-repeat -223px -97px;
+}
+.floor-warp .floor-tow > ul > li:first-child:hover {
+  background-position-y: -143px;
+}
+.floor-warp .floor-tow > ul > li:nth-child(2) {
+  background: url('../images/login/base.png') no-repeat -307px -97px;
+}
+.floor-warp .floor-tow > ul > li:nth-child(2):hover {
+  background-position-y: -143px;
+}
+.floor-warp .floor-tow > ul > li:nth-child(2):hover .qbox {
+  opacity: 1;
+}
+.floor-warp .floor-tow > ul > li:nth-child(3) {
+  background: url('../images/login/base.png') no-repeat -349px -97px;
+}
+.floor-warp .floor-tow > ul > li:nth-child(3):hover {
+  background-position-y: -143px;
+}
+.floor-warp .floor-tow > ul > li > img {
+  width: 100%;
+  height: 100%;
 }

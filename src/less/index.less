@@ -1,56 +1,57 @@
 * {
-  margin    : 0;
-  padding   : 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 a {
   text-decoration: none !important;
 }
+
 // 引入轮播图
 @import "./slider.less";
 
 .top-warp {
-  width              : 1240px;
+  width: 1240px;
 
   >.top-nav {
-    height             : 82px;
-    width              : 1240px;
-    position           : absolute;
-    z-index            : 3;
-    top                : 0;
+    height: 82px;
+    width: 1240px;
+    position: absolute;
+    z-index: 3;
+    top: 0;
 
     >a {
       display: block;
-      width  : 110px;
-      height : 100%;
-      float  : left;
+      width: 110px;
+      height: 100%;
+      float: left;
 
       >.top-logo {
-        height    : 100%;
-        width     : 110px;
+        height: 100%;
+        width: 110px;
         background: url('../images/login/base.png') 0px 25px;
       }
     }
 
     >ul {
-      width        : 760px;
-      height       : 100%;
-      float        : left;
-      margin-left  : 80px;
+      width: 760px;
+      height: 100%;
+      float: left;
+      margin-left: 80px;
       margin-bottom: 0;
 
       >li {
-        float     : left;
+        float: left;
         list-style: none;
 
         >a {
-          display    : block;
-          padding    : 31px 20px 30px;
+          display: block;
+          padding: 31px 20px 30px;
           line-height: 21px;
-          font-size  : 14px;
-          transition : color .1s linear;
-          color      : #fff;
+          font-size: 14px;
+          transition: color .1s linear;
+          color: #fff;
 
           &:hover {
             color: rgb(48, 88, 223);
@@ -60,69 +61,532 @@ a {
     }
 
     .top-search {
-      float           : left;
-      width           : 180px;
-      height          : 30px;
-      border          : 1px solid rgb(102, 102, 102);
+      float: left;
+      width: 180px;
+      height: 30px;
+      border: 1px solid rgb(102, 102, 102);
       background-color: #fff;
-      border-radius   : 15px;
-      margin-top      : 27px;
+      border-radius: 15px;
+      margin-top: 27px;
 
       >input {
-        margin-top : 5px;
+        margin-top: 5px;
         margin-left: 13px;
-        border     : none;
-        outline    : none;
-        width      : 130px;
+        border: none;
+        outline: none;
+        width: 130px;
       }
     }
 
     .top-shop {
-      float      : right;
-      margin-top : 27px;
+      float: right;
+      margin-top: 27px;
       margin-left: 10px;
 
       >a {
-        display        : block;
-        width          : 30px;
-        height         : 30px;
-        background     : url('../images/index/shop.png');
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url('../images/index/shop.png');
         background-size: 30px;
       }
     }
 
     .top-user {
-      float     : right;
+      float: right;
       margin-top: 27px;
 
       >a {
-        display        : block;
-        width          : 30px;
-        height         : 30px;
-        background     : url('../images/index/man.png');
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url('../images/index/man.png');
         background-size: 30px;
       }
 
       // 登录后的样式
       >.userLogo {
-        display        : none;
-        width          : 30px;
-        height         : 30px;
-        background     : url('../images/index/user.jpg') no-repeat center center;
+        display: none;
+        width: 30px;
+        height: 30px;
+        background: url('../images/index/user.jpg') no-repeat center center;
         background-size: 50px;
-        border-radius  : 50%;
+        border-radius: 50%;
       }
     }
   }
 }
+
 // 四个图标区域
 .three-warp {
-  width              : 1240px;
-  background-color: #fddf;
+  width: 1240px;
+
+  // background-color: #fddf;
   >.three-row {
 
-    height: 278px;
+    // height: 278px;
+    >div {
+      padding-top: 45px;
+      text-align: center;
+      transition: .3s;
+      cursor: pointer;
+      margin-bottom: 39px;
+
+      >p {
+        color: rgb(153, 153, 153);
+        font-size: 14px;
+      }
+
+      >h3 {
+        font-size: 20px;
+        margin-top: 7px;
+        margin-bottom: 5px;
+      }
+
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+
+    img {
+      width: 130px;
+      height: 130px;
+    }
   }
 }
 
 
+// 主体区域
+.main-index {
+  // height: 5000px;
+  background-color: rgb(244, 244, 244);
+
+  >.title-top {
+    text-align: center;
+
+    >h3 {
+      margin-top: 50px;
+      font-size: 30px;
+    }
+  }
+
+  .last-shop {
+    margin-bottom: 60px;
+  }
+
+  >.phone-img {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+
+    >img {
+      position: absolute;
+      width: auto;
+      height: auto;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity .2s linear;
+
+      &:hover {
+        opacity: .85;
+      }
+    }
+  }
+
+  // 通用红box
+  .red-box {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    color: #fff !important;
+    font-size: 16px !important;
+    background-image: linear-gradient(120deg, #ff3149, #ff64a6);
+    text-align: center;
+    line-height: 60px;
+    top: 30px;
+    left: 30px;
+  }
+
+  // 6部区域
+  .six-phone {
+    width: 1240px;
+    // height: 1005px;
+    padding: 0;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #000;
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    >div {
+      height: 610px;
+      width: 615px;
+      position: relative;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    // 前两部手机
+    .tow-phone {
+      position: relative;
+      padding: 0;
+
+      img {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        height: 460px;
+        margin-left: -250px;
+      }
+
+
+
+      &:first-child {
+        margin-right: 9px;
+        margin-top: 10px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 10px;
+      }
+
+      .tow-word {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+
+        >h3 {
+          font-size: 28px;
+        }
+
+        >p {
+          font-size: 18px;
+          color: #333;
+        }
+
+        >span {
+          display: inline-block;
+          color: #c00;
+          font-size: 22px;
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+
+  // 后四部手机，耳机，通用样式
+  .six-phone .four-phone,
+  .shop-headset .four-phone {
+    width: 303px;
+    height: 375px;
+    text-align: center;
+    margin-right: 9px;
+    margin-top: 10px;
+    padding: 0;
+
+    &:last-of-type {
+      margin-right: 0
+    }
+
+    img {
+      height: 230px;
+      margin-top: 30px;
+    }
+
+    h4 {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 7px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 5px;
+    }
+
+    span {
+      display: inline-block;
+      color: #c00;
+      font-size: 22px;
+      margin-right: 14px;
+    }
+  }
+
+  // 通用hover
+  .six-phone>div,
+  .shop-headset>.row>div {
+    transition: all .4s ease;
+
+    &:hover {
+      box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+    }
+  }
+
+
+
+
+  // 耳机区域
+  .shop-headset {
+    width: 1240px;
+
+    .four-phone {
+      position: relative;
+      background-color: #fff;
+      overflow: hidden;
+
+      .big-headset {
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .big-word {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+
+        >h4 {
+          color: #fff;
+          font-size: 21px;
+          font-weight: 700;
+          display: block;
+          word-wrap: normal;
+        }
+
+        >p {
+          color: #fff;
+          font-size: 14px;
+        }
+
+        >span {
+          color: #ebce6b;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+
+// 底部区域
+.floor-warp {
+  padding: 0;
+  width: 1240px;
+  height: 248px;
+  padding: 48px 0 20px;
+
+  // background-color: #999;
+  >.row {
+    margin: 0px;
+  }
+
+  >.one {
+    height: 85px;
+    .col-md-8 {
+      padding: 0;
+    }
+    ul {
+      width: 1000px;
+      height: 69px;
+
+      li {
+        text-align: center;
+        list-style: none;
+        width: 150px;
+        float: left;
+        height: 69px;
+        cursor: pointer;
+
+        >img {
+          width: 50px;
+          height: 39px;
+        }
+
+        >p {
+          margin-top: 5px;
+          font-size: 14px;
+          color: #999;
+        }
+      }
+    }
+
+    >.right-word {
+      width: 170px;
+      height: 103px;
+      float: right;
+      padding: 0;
+      text-align: right;
+      margin-top: -20px;
+
+      >p {
+        color: #999;
+        font-size: 12px;
+      }
+
+      >h4 {
+        color: #008cff;
+        font-size: 25px;
+        font-weight: 400;
+        margin-top: -6px;
+        line-height: 40px;
+        margin-bottom: 0px;
+      }
+
+      >span {
+        display: block;
+        height: 30px;
+        padding: 0 16px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        border-radius: 20px;
+        margin-top: 3px;
+        display: inline-block;
+        font-size: 14px;
+        background: #008cff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .two {
+    height: 18px;
+    height: 1px;
+    background-color: rgb(238, 238, 238);
+    .col-md-8 {
+      padding: 0;
+    }
+    ul {
+      width: 1100px;
+      height: 100%;
+      overflow: hidden;
+      margin-top: 25px;
+      li {
+        list-style: none;
+        padding-right: 15px;
+        border-right: 1px solid #d6d6d6;
+        float: left;
+        height: 18px;
+        margin-right: 15px;
+        &:last-of-type {
+          margin-right: 0px;
+          border: none;
+          &:last-of-type>a {
+            background: url('../images/index/1c31db15-ab85-4932-8e6c-edfd6039bc60.png') no-repeat 1px;
+            background-size: 14px 14px;
+            text-indent: 20px;
+          }
+        }
+        a {
+          display: inline-block;
+          color: #999;
+          &:hover {
+            color: #008cff;
+          }
+          
+
+        }
+      }
+    }
+  }
+  .floor-tow {
+    height: 50px;
+    float : left;
+    width : 100%;
+    margin-left: 1px;
+
+    >span {
+      font-size : 13px;
+      color     : rgba(127, 127, 127, 0.562);
+      cursor    : pointer;
+      transition: .4s;
+
+      &:last-child {
+        display        : inline-block;
+        text-indent    : 20px;
+        background     : url('../images/login/ghs.png') no-repeat 1px 1px;
+        background-size: 14px 14px;
+      }
+
+      &:hover {
+        color: #000;
+      }
+    }
+    >ul {
+      width:220px;
+      height: 30px;
+      float: right;
+      position: relative;
+      .qbox {
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        top: -185px;
+        left: 53px;
+        transition: .3s;
+        opacity: 0;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      >li {
+        width: 24px;
+        height: 20px;
+        list-style: none;
+        padding: 0 5px 0;
+        border-right: 1px solid #d6d6d6;
+        float: right;
+        margin-left: 5px;
+        &:first-child {
+          background  : url('../images/login/base.png') no-repeat -223px -97px;
+
+
+          &:hover {
+            background-position-y: -143px;
+            
+          }
+        }
+        &:nth-child(2) {
+          background  : url('../images/login/base.png') no-repeat -307px -97px;
+ 
+          &:hover {
+            background-position-y: -143px;
+          }
+          &:hover .qbox {
+            opacity: 1;
+          }
+        }
+        &:nth-child(3) {
+          background: url('../images/login/base.png') no-repeat -349px -97px;
+
+          &:hover {
+            background-position-y: -143px;
+          }
+        }
+        >img {
+          width: 100%;
+          height: 100%;
+          
+        }
+      }
+    }
+  }
+}

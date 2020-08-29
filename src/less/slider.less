@@ -1,24 +1,28 @@
 // 轮播图
 .tow-slider {
+  width: 100%;
   padding: 0;
+  // text-align: center;
 
   .slider {
     overflow : hidden;
-    // width    : 100vw;
+    text-align: center;
     height   : 680px;
-    // margin:150px auto;
+   
     position : relative;
 
     &>div {
       position: absolute;
-      width   : 40000px;
+      width   : 60000px;
       height  : 680px;
 
       &>img {
         // float 会将所有元素变块级元素
         float : left;
         // width : 100vw;
+        // margin: 0 auto;
         height: 680px;
+        // min-width: 580px;
       }
     }
 
