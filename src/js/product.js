@@ -18,8 +18,8 @@ import { cookie } from './library/cookie.js';
     success: function (res) {
 
       let picture = JSON.parse(res.picture);
-
-
+      // 设置网页标题
+      $('title').text(`${res.title} - 魅族商城`);
       let template = `
       <div class="container-fluid two-warp">
     <div class="row">

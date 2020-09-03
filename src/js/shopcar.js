@@ -2,6 +2,7 @@ import $ from './library/jquery.js';
 import { cookie } from './library/cookie.js';
 
 (function () {
+
   let shop = cookie.get('shop');
   if (shop) {
     shop = JSON.parse(shop); // 当存在cookie数据，转成json对象
