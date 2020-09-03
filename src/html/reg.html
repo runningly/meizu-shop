@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../css/login.css">
   <script src="../../node_modules/jquery/dist/jquery.js"></script>
   <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-
+  <script src="../js/reg.js" type="module"></script>
 </head>
 
 <body>
@@ -35,8 +35,8 @@
             </div>
             <!-- 警告框区域 -->
             <div class="main-warn">
-              <span>哈哈哈哈</span>
-              <span></span>
+              <span class="warning"></span>
+              <span class="close-warn"></span>
             </div>
             <!-- 账号登录区域 -->
             <div class="login1">
@@ -44,10 +44,10 @@
             <div class="one-user">
               <span>+ 86</span>
               <span></span>
-              <input type="text" name="username" id="username" placeholder="输入用户名或手机号">
+              <input type="text" name="username" id="username" class="login-input" placeholder="输入用户名">
             </div>
             <div class="one-user">
-              <input type="password" name="password" id="password" placeholder="请输入密码">
+              <input type="password" name="password" id="password" class="login-input" placeholder="请输入密码">
             </div>
             <div class="main-verify">
               <span></span>
@@ -57,14 +57,14 @@
               <span></span>
             </div>
             <div class="main-check">
-              <input type="checkbox" name="checkbox" id="checkbox2">
+              <input type="checkbox" name="checkbox" id="checkbox2"  >
               <span class="pact">注册账号即表示您同意并愿意遵守 
                 </span> 
                 <a href="javascript:;">Flyme账号服务协议 、 
                   法律声明 和 隐私政策</a>
             </div>
             <!-- 确认按钮 -->
-            <input type="submit" id="submit" value="立即注册">
+            <input type="button" id="submit" value="注册">
             <div class="main-bottom">
               <a href="./login.html">登录</a>
               <a href="javascript:;"></a>

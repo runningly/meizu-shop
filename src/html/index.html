@@ -5,20 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>首页</title>
-  <link rel="icon" href="../images/login" sizes="32x32">
+  <link rel="icon" href="../images/index/favicon-90c2e618ff.ico" sizes="32x32">
   <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../css/index.css">
-  <!-- <link rel="stylesheet" href="../css/slider.css"> -->
   <script src="../../node_modules/jquery/dist/jquery.js"></script>
   <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="../js/slide.js"></script>
-  <script src="../js/index.js"></script>
+  <!-- <script src="../js/slide.js"></script> -->
+  <script src="../js/index.js" type="module"></script>
   <script></script>
 </head>
 
 <body>
   <!-- 顶部区域 -->
-  <div class="container top-warp">
+  <div class="container-fluid top-warp">
+
     <div class="row top-nav">
       <!-- logo -->
       <a href="./index.html">
@@ -65,9 +65,61 @@
         <a href="../html/shop.html"></a>
       </div>
       <div class="top-user">
-        <a href="javascript:;"></a>
-        <a href="javascript:;" class="userLogo"></a>
+        <div class="dropdown1">
+          <!-- 二级下拉 -->
+          <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
+            <li><a href="./login.html">立即登录</a></li>
+            <li><a href="./reg.html">立即注册</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">M码通道</a></li>
+          </ul>
+        </div>
+        <div href="javascript:;" class="userLogo dropdown">
+          <!-- 二级下拉 -->
+
+          <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
+            <li><a href="javascript:;" id="quit">退出登录</a></li>
+            <li><a href="./reg.html">立即注册</a></li>
+            <li><a href="./cart.html">我的购物车</a></li>
+          </ul>
+
+        </div>
       </div>
+    </div>
+
+  </div>
+
+  <!-- 下拉区域 -->
+  <div class="container-fluid pullDown">
+    <div class="row pull-list">
+
+      <ul class="ul-pull-list">
+        <li>
+          <img src="../images/index/pulldown/one/1.jpg" alt="">
+        </li>
+        <li>
+          <img src="../images/index/pulldown/one/2.jpg" alt="">
+        </li>
+        <li>
+          <img src="../images/index/pulldown/one/3.jpg" alt="">
+        </li>
+        <li>
+          <img src="../images/index/pulldown/one/4.jpg" alt="">
+        </li>
+        <li>
+          <img src="../images/index/pulldown/one/5.jpg" alt="">
+        </li>
+        <li>
+          <img src="../images/index/pulldown/one/6.jpg" alt="">
+        </li>
+        <li>
+          <img src="../images/index/pulldown/one/7.jpg" alt="">
+        </li>
+        <li>
+          <img src="../images/index/pulldown/one/8.jpg" alt="">
+        </li>
+      </ul>
+
     </div>
   </div>
 
@@ -105,22 +157,22 @@
   <div class="container three-warp">
     <div class="row three-row">
       <div class="col-md-3 col-sm-6">
-        <img src="../images/index/1101f638-8ee9-4bb7-b363-9b54584b30b1.jpg" alt="">
+        <img class="lazy" data-original="../images/index/1101f638-8ee9-4bb7-b363-9b54584b30b1.jpg" alt="">
         <h3>魅族开学聚</h3>
         <p>限时领券至高立省200</p>
       </div>
       <div class="col-md-3 col-sm-6">
-        <img src="../images/index/0312f2d9-ebf4-48b6-ad25-7f53114ba154.png" alt="">
+        <img class="lazy" data-original="../images/index/0312f2d9-ebf4-48b6-ad25-7f53114ba154.png" alt="">
         <h3>分享热爱 共享无忧</h3>
         <p>登记入口</p>
       </div>
       <div class="col-md-3 col-sm-6">
-        <img src="../images/index/e32cc1ab-42ff-4510-86ae-1d1f855ab852.png" alt="">
+        <img class="lazy" data-original="../images/index/e32cc1ab-42ff-4510-86ae-1d1f855ab852.png" alt="">
         <h3>魅族年度影像大赛</h3>
         <p>将生活一按成诗</p>
       </div>
       <div class="col-md-3 col-sm-6">
-        <img src="../images/index/13de22b5-2301-480f-99f9-778e4ff8644c.jpg" alt="">
+        <img class="lazy" data-original="../images/index/13de22b5-2301-480f-99f9-778e4ff8644c.jpg" alt="">
         <h3>mCycle</h3>
         <p>16变17 省钱又舒心</p>
       </div>
@@ -134,38 +186,45 @@
       <h3>手机</h3>
     </div>
     <div class="row phone-img">
-      <img src="../images/index/ce91f8d5-6f92-4ac0-981f-ae5e6b990a9f.jpg" alt="">
+      <img class="lazy" class="lazy" data-original="../images/index/ce91f8d5-6f92-4ac0-981f-ae5e6b990a9f.jpg" alt="">
     </div>
 
     <!-- 6个手机区域 -->
     <div class="row">
       <div class="container six-phone">
-        <div class="col-md-6 col-sm-12 tow-phone">
+
+        <!-- <div class="col-md-6 col-sm-12 tow-phone">
           <a href="javascript:void(0)">
-            <img src="../images/index/Cgbj0V7gkOmAA4ISAAaNPXOk9_8044.png" alt="">
+            <img class="lazy" data-original="../images/req/p1-big1.png" alt="">
             <span class="red-box">赠品</span>
             <div class="tow-word">
               <h3>魅族 17</h3>
               <p>限时领券至高立省200+赠全新壳膜套装</p>
-              <span>￥3699</span>
+              <span class="rmb">￥</span>
+              <span class="newPhone-name">
+                3699
+              </span>
             </div>
           </a>
         </div>
         <div class="col-md-6 col-sm-12 tow-phone">
           <a href="javascript:;">
-            <img src="../images/index/222c8360-9dd6-43de-b963-1ff0ada52281.png" alt="">
+            <img class="lazy" data-original="../images/index/222c8360-9dd6-43de-b963-1ff0ada52281.png" alt="">
             <span class="red-box">赠品</span>
             <div class="tow-word">
               <h3>魅族 17 Pro</h3>
               <p>限时领券至高立省200+赠全新壳膜套装</p>
-              <span>￥4299</span>
+              <span class="rmb">￥</span>
+              <span class="newPhone-name">
+                4299
+              </span>
             </div>
           </a>
-        </div>
+        </div> -->
         <!-- 四个手机区域 -->
-        <div class="col-md-3 col-sm-6 four-phone">
+        <!-- <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0V61DmKAarkmAAUGRp7cOD4317.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0V61DmKAarkmAAUGRp7cOD4317.png" alt="">
             <div class="four-word">
               <h4>魅族 17 航母限定版</h4>
               <p>以梦为舰 热爱起航</p>
@@ -175,7 +234,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0V2upxqANyVFAAjApUYA58w668.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0V2upxqANyVFAAjApUYA58w668.png" alt="">
             <div class="four-word">
               <h4>魅族 16T</h4>
               <p>6.5英寸极边全面屏 | 骁龙855旗舰处理器</p>
@@ -185,7 +244,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0F1jhu-AaV4AAAlk4z4lkt0463.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0F1jhu-AaV4AAAlk4z4lkt0463.png" alt="">
             <div class="four-word">
               <h4>魅族 16s Pro</h4>
               <p>高通骁龙 855 Plus | 索尼 4800W AI 三摄</p>
@@ -195,14 +254,14 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0VzvRJ-AWr44AAiGUPbS22w583.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0VzvRJ-AWr44AAiGUPbS22w583.png" alt="">
             <div class="four-word">
               <h4>魅族 16Xs</h4>
               <p>极边全面屏 | 4800W AI三摄 | 疾速屏下指纹</p>
               <span>￥1499</span>
             </div>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -211,7 +270,7 @@
       <h3>魅族声学</h3>
     </div>
     <div class="row phone-img">
-      <img src="../images/index/6d7e6b4e-1eba-4f10-bbb1-685490bfca64.jpg" alt="">
+      <img class="lazy" data-original="../images/index/6d7e6b4e-1eba-4f10-bbb1-685490bfca64.jpg" alt="">
     </div>
 
     <!-- 三行耳机区域 -->
@@ -221,7 +280,8 @@
         <!-- 四行耳机区域 -->
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/04811a8d-07fb-4188-a852-1971f442d08f.jpg" class="big-headset" alt="">
+            <img data-original="../images/index/04811a8d-07fb-4188-a852-1971f442d08f.jpg" class="big-headset lazy"
+              alt="">
             <div class="four-word big-word">
               <h4>魅族 EP3C 耳机</h4>
               <p>Hi-Res 认证高解析音质 | Type-C数字接口</p>
@@ -231,7 +291,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0Vy_C3GAN_TKAAExaPfTwFc180.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0Vy_C3GAN_TKAAExaPfTwFc180.png" alt="">
             <div class="four-word">
               <h4>魅族 HIFI 解码耳放</h4>
               <p>高性能DAC芯片|纯净HiFi音质|600Ω高阻抗推力</p>
@@ -241,7 +301,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0Fy9JYOACw2DAAMWf3vEhbA886.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0Fy9JYOACw2DAAMWf3vEhbA886.png" alt="">
             <div class="four-word">
               <h4>魅族 EP63NC 无线降噪耳机</h4>
               <p>AMS 芯片智能降噪 Qualcomm apt-X™ 高清音质</p>
@@ -251,7 +311,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0V3UocyAR_tJAApbDmCAyEo620.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0V3UocyAR_tJAApbDmCAyEo620.png" alt="">
             <div class="four-word">
               <h4>魅族 HD60 头戴式蓝牙耳机</h4>
               <p>40mm生物振膜 | 触控操作 | 蓝牙5.0</p>
@@ -264,7 +324,8 @@
       <div class="row">
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/be6fed05-168e-4633-bc1d-6e75705fce07.jpg" class="big-headset" alt="">
+            <img data-original="../images/index/be6fed05-168e-4633-bc1d-6e75705fce07.jpg" class="big-headset lazy"
+              alt="">
             <div class="four-word big-word">
               <h4>魅族 POP2 真无线蓝牙耳机</h4>
               <p>蓝牙5.0 | 单次8H续航 | 石墨烯振膜 | 双耳通话</p>
@@ -274,7 +335,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0Vy9Jq6AEzhMAApuih_4TPw329.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0Vy9Jq6AEzhMAApuih_4TPw329.png" alt="">
             <div class="four-word">
               <h4>魅族 POP2 真无线蓝牙耳机</h4>
               <p>蓝牙5.0 | 单次8H续航 | 石墨烯振膜 | 双耳通话</p>
@@ -284,7 +345,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0Fui_-OAIlOuAAIlimOCLcA452.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0Fui_-OAIlOuAAIlimOCLcA452.png" alt="">
             <div class="four-word">
               <h4>魅族 EP52 Lite 蓝牙耳机</h4>
               <p>生物纤维振膜|8小时续航|IPX5级防水|轻巧亲肤</p>
@@ -294,7 +355,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cix_s1gcTHCANftiAAErzSizI8c299.png" alt="">
+            <img class="lazy" data-original="../images/index/Cix_s1gcTHCANftiAAErzSizI8c299.png" alt="">
             <div class="four-word">
               <h4>魅族 EP2X 耳机</h4>
               <p>一体式线控 | 3.5mm接口 |流线设计</p>
@@ -307,7 +368,8 @@
       <div class="row">
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/370ad36f-425c-453a-b406-ccb2a0dffeec.jpg" class="big-headset" alt="">
+            <img data-original="../images/index/370ad36f-425c-453a-b406-ccb2a0dffeec.jpg" class="big-headset lazy"
+              alt="">
             <div class="four-word big-word">
               <h4>MEIZU UR 高端定制耳机 预约</h4>
               <p>【预约专用】私人定制，为你而声</p>
@@ -317,7 +379,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/1449643421-24522.png" alt="">
+            <img class="lazy" data-original="../images/index/1449643421-24522.png" alt="">
             <div class="four-word">
               <h4>魅族 EP21耳机</h4>
               <p>三键一体式线控 | 3.5mm接口 </p>
@@ -327,7 +389,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0FpeqaKAYLSmAATXqR4BPH8829.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0FpeqaKAYLSmAATXqR4BPH8829.png" alt="">
             <div class="four-word">
               <h4>魅族 LIVE 四单元动铁耳机</h4>
               <p>Knowles四动铁 双通道导音系统 现场级音乐表现</p>
@@ -337,7 +399,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0VrcX6yABHxPAARZwWUAjc4748.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0VrcX6yABHxPAARZwWUAjc4748.png" alt="">
             <div class="four-word">
               <h4>魅族 HALO 激光蓝牙耳机</h4>
               <p>炫酷夜跑神器 随性张扬</p>
@@ -354,7 +416,7 @@
       <h3>智能配件</h3>
     </div>
     <div class="row phone-img">
-      <img src="../images/index/5a0f5911-eec0-46d1-9b3c-af70f42b373f.jpg" alt="">
+      <img class="lazy" data-original="../images/index/5a0f5911-eec0-46d1-9b3c-af70f42b373f.jpg" alt="">
     </div>
 
     <!-- 三行智能配件区域 -->
@@ -363,7 +425,8 @@
       <div class="row">
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/85fb37fe-35ae-42bf-a34d-0e102334a2d5.jpg" class="big-headset" alt="">
+            <img data-original="../images/index/85fb37fe-35ae-42bf-a34d-0e102334a2d5.jpg" class="big-headset lazy"
+              alt="">
             <div class="four-word big-word">
               <h4>魅族无线超充板</h4>
               <p>魅族 17 Pro 适用 | 27W 无线快充 | 主动散热</p>
@@ -373,7 +436,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0F64-fCANzfvAAMAQSi_H7U780.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0F64-fCANzfvAAMAQSi_H7U780.png" alt="">
             <span class="red-box">新品</span>
             <div class="four-word">
               <h4>魅族超充 USB-C 移动电源</h4>
@@ -384,7 +447,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0F8alxiAIkvsAAn9MNJn1zA506.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0F8alxiAIkvsAAn9MNJn1zA506.png" alt="">
             <span class="red-box">新品</span>
             <div class="four-word">
               <h4>Pandaer 「17」夏日系列 壳膜套装</h4>
@@ -395,7 +458,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0F6z7ouAdDUlAAgE_65zxx0628.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0F6z7ouAdDUlAAgE_65zxx0628.png" alt="">
             <div class="four-word">
               <h4>魅族 17 系列 液态硅胶壳</h4>
               <p>魅族 17 / 17 Pro 适用 | 魅族手感 | 柔韧保护</p>
@@ -408,7 +471,8 @@
       <div class="row">
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/49b2bac5-905c-45f0-a4cc-4e3f6d30e7f4.jpg" class="big-headset" alt="">
+            <img data-original="../images/index/49b2bac5-905c-45f0-a4cc-4e3f6d30e7f4.jpg" class="big-headset lazy"
+              alt="">
             <div class="four-word big-word">
               <h4>魅族超充 GaN 三口充电器</h4>
               <p>魅族 17 / 17 Pro 适用 | 魅族手感 | 柔韧保护</p>
@@ -418,7 +482,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0V6z7g-AMmMHAAkLeDbS6O4698.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0V6z7g-AMmMHAAkLeDbS6O4698.png" alt="">
             <div class="four-word">
               <h4>Pandaer 「17」系列 手机壳</h4>
               <p>魅族 17 / 魅族 17 Pro 适用 | 潮趣个性 | 官方适配</p>
@@ -428,7 +492,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0V37HNOAIdPFAAcMN3qrsLw357.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0V37HNOAIdPFAAcMN3qrsLw357.png" alt="">
             <div class="four-word">
               <h4>魅族中国红 Type-C 金属编织线</h4>
               <p>Type-C 接口 | 3A大电流 | 耐磨编织材料</p>
@@ -438,7 +502,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0F7jIyOAaKEWAAdLI30DPuc780.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0F7jIyOAaKEWAAdLI30DPuc780.png" alt="">
             <div class="four-word">
               <h4>魅族双 USB-C 快充线</h4>
               <p>双 USB-C 接口 | 5A 大电流 | 耐磨编织材料 | E-Marker 芯片</p>
@@ -447,11 +511,13 @@
           </a>
         </div>
       </div>
+
       <!-- 第三行 -->
       <div class="row">
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/6ae5ad1c-de3d-437d-a6d2-a2b2a6c942c9.jpg" class="big-headset" alt="">
+            <img data-original="../images/index/6ae5ad1c-de3d-437d-a6d2-a2b2a6c942c9.jpg" class="big-headset lazy"
+              alt="">
             <div class="four-word big-word">
               <h4>Pandaer 「17」系列 手机壳</h4>
               <p>Pandaer 家族 | 潮趣个性 | 官方适配</p>
@@ -461,7 +527,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0F5u8euASZyLAAcq4oEH89w043.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0F5u8euASZyLAAcq4oEH89w043.png" alt="">
             <div class="four-word">
               <h4>魅族 Type-C 游戏专用线</h4>
               <p>Type-C 接口 | 5A大电流 | 弯头专为游戏设计 | 耐磨编织材料 </p>
@@ -471,7 +537,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0V6o2n-ACbZsAAGnmeZVVRs678.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0V6o2n-ACbZsAAGnmeZVVRs678.png" alt="">
             <div class="four-word">
               <h4>魅族 Type-C 数据线</h4>
               <p>5A 大电流 | Type-C 接口 | 更快更方便</p>
@@ -481,7 +547,7 @@
         </div>
         <div class="col-md-3 col-sm-6 four-phone">
           <a href="javascript:;">
-            <img src="../images/index/Cgbj0V7Qy2mAVnM6AARv0cdv8JI919.png" alt="">
+            <img class="lazy" data-original="../images/index/Cgbj0V7Qy2mAVnM6AARv0cdv8JI919.png" alt="">
             <div class="four-word">
               <h4>Lifeme PD 快充线</h4>
               <p>USB-C 转 Lightning | MFi 认证 | 3A 大电流 | PD 快充 | 兼容大部分苹果设备</p>
@@ -501,27 +567,27 @@
       <div class="col-md-8">
         <ul>
           <li>
-            <img src="../images/index/2c69bf7c-2d29-4fd4-852e-0aa497f36f51.png" alt="">
+            <img class="lazy" data-original="../images/index/2c69bf7c-2d29-4fd4-852e-0aa497f36f51.png" alt="">
             <p>满80免运费</p>
           </li>
           <li>
-            <img src="../images/index/d28eac8b-b915-49dc-9dbd-80884a07d44f.png" alt="">
+            <img class="lazy" data-original="../images/index/d28eac8b-b915-49dc-9dbd-80884a07d44f.png" alt="">
             <p>100+ 城市次日送达</p>
           </li>
           <li>
-            <img src="../images/index/b21f3e65-f7f4-4693-914c-c070faf96770.png" alt="">
+            <img class="lazy" data-original="../images/index/b21f3e65-f7f4-4693-914c-c070faf96770.png" alt="">
             <p>7天无理由退货</p>
           </li>
           <li>
-            <img src="../images/index/1998f0da-a439-4e07-9736-e6a1c39fb0ae.png" alt="">
+            <img class="lazy" data-original="../images/index/1998f0da-a439-4e07-9736-e6a1c39fb0ae.png" alt="">
             <p>15天换货保障</p>
           </li>
           <li>
-            <img src="../images/index/420825c1-4763-436d-b3e1-721651ccc70c.png" alt="">
+            <img class="lazy" data-original="../images/index/420825c1-4763-436d-b3e1-721651ccc70c.png" alt="">
             <p>1年免费保修</p>
           </li>
           <li>
-            <img src="../images/index/1c5cfeff-1b35-499e-bc2a-1fd29305be69.png" alt="">
+            <img class="lazy" data-original="../images/index/1c5cfeff-1b35-499e-bc2a-1fd29305be69.png" alt="">
             <p>上门快修</p>
           </li>
         </ul>
@@ -546,14 +612,13 @@
           <li><a href="javascript:;">线上销售授权名单公示</a></li>
           <li><a href="javascript:;">出版物经营许可证</a></li>
           <li><a href="javascript:;">简体中文</a></li>
-          <!-- 1c31db15-ab85-4932-8e6c-edfd6039bc60.png -->
         </ul>
       </div>
     </div>
     <div class="row floor-tow">
       <span>©2020 Meizu Telecom Equipment Co., Ltd. All rights reserved.备案号: 粤ICP备13003602号-4经营许可证编号: 粤B2-20130198
         营业执照</span>
-      <span>粤公网安备 44049102496076号</span>
+      <span class="filing">粤公网安备 44049102496076号</span>
       <ul>
         <li></li>
         <li>
@@ -562,12 +627,11 @@
           </div>
         </li>
         <li></li>
-        <li><img src="../images/index/3b085af8-a47b-453c-b147-a4b352fb3a14.png" alt="" class="img1">
-        </li>
-        
+        <li></li>
+
       </ul>
     </div>
-    </div>
+  </div>
 </body>
 
 </html>

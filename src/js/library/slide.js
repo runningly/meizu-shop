@@ -1,4 +1,4 @@
-(function ($) {
+import $ from './jquery.js'; 
   // 在jquery的原型上添加一个插件
   $.fn.extend({
     slider: function (options) {
@@ -12,7 +12,7 @@
         prev = null,  // 上一张
         next = null, // 下一张
         timer = null, // 计时器
-        circle = null // 可点击的圆
+        circle = null, // 可点击的圆
       elms = {}, // 命名空间(专门用来存储变量名的对象)
         defaults = {
           speed: 500, // 动画速度
@@ -51,6 +51,7 @@
         })
         // 给每个li添加点击事件
         elms.liBtn.on('click', function () {
+          stop()
           let index = elms.liBtn.index(this) // 获取当前点击的index值
           circle(index)
         })
@@ -138,5 +139,6 @@
       }
       main()
     }
+
   })
-})(jQuery);
+
